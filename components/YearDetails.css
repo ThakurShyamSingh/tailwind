@@ -1,0 +1,105 @@
+.year-details-container {
+  margin-left: 280px;
+  padding: 20px;
+}
+
+.year-details-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.year-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.year-details-table th,
+.year-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.year-details-table th {
+  background-color: #f4f4f9;
+  font-weight: bold;
+}
+
+.year-details-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.year-details-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.student-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.ag-theme-alpine {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ag-header-cell {
+  background-color: #f4f4f9;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ag-row {
+  display: flex;
+  align-items: center; /* Center align the data vertically */
+  justify-content: center; /* Center align the data horizontally */
+  height: 100%; /* Ensure the row takes full height */
+}
+
+.ag-row:hover {
+  background-color: #f9f9f9;
+}
+
+.android-style {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.android-style:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.android-style:active {
+  background-color: #1a00a3;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,110 @@
+/* Sidebar container styling with curved design */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background-color: #EDF4FA; /* Blue top, white bottom */
+  color: #FFFFFF; /* White text */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* padding: 20px; */
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Ensure the button-division spans the full height */
+.button-division {
+  height: 100%; /* Make it span the full height */
+  border-top-right-radius: 50px; /* Add curve to the top-right */
+  background-color: #3d6db9;
+  overflow-y: auto; /* Ensure content scrolls if needed */
+}
+
+/* Add transition and styling for selected button */
+.button-division .selected {
+  margin-left: 30px; /* Move to the right */
+  color: #3d6db9;
+
+  background-color: #EDF4FA !important; /* Change color */
+  transition: margin-left 2s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Logo styling */
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  color: #3d6db9;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+  width: 50px;
+  height: 50px;
+  color: #000000;
+}
+
+/* User profile styling */
+.sidebar .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #3d6db9;
+  border-radius: 10px;
+}
+
+.sidebar .user-info .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar .user-info .details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.sidebar .user-info .details p:first-child {
+  font-weight: bold;
+}
+
+/* Menu styling */
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.sidebar .menu li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar .menu li:hover {
+  background-color: #1E3A8A; /* Highlight on hover */
+}
+
+/* Selected tab styling */
+.sidebar .menu li.selected {
+  background-color: #1E3A8A; /* Highlight for selected tab */
+  font-weight: bold;
+}
+
+/* Ensure buttons and content fit within the screen */
+.sidebar {
+  overflow-y: auto;
+}

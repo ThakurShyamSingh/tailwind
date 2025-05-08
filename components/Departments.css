@@ -1,0 +1,82 @@
+.departments-container {
+  margin-top: 60px; /* Adjusted to avoid overlap with the top bar */
+  margin-left: 250px;
+  padding: 60px;
+  background-color: #EFFAFD;
+  height: calc(100%); /* Full height for the container */
+}
+
+.departments-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: fixed; /* Make the top bar fixed */
+  top: 0;
+  left: 280px; /* Adjusted to ensure it does not overlap with the side panel */
+  width: calc(100% - 280px); /* Cover the remaining area excluding the side panel */
+  background-color: #EFFAFD;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2000;
+}
+
+.department-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  justify-content: center;
+}
+
+.department-item {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 100px;
+  padding: 50px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.department-item:hover {
+  background-color: #f4f4f9;
+  border-radius: 20px;
+}
+
+.department-item h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.year-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.department-item:hover .year-dropdown {
+  display: block;
+}
+
+.year-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f4f4f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.year-dropdown button:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,61 @@
+.newsletter-container {
+  margin-left: 280px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #73655d;
+}
+
+.newsletter-container h1 {
+  position: fixed; /* Make the top bar fixed */
+  top: 0;
+  color: #fff; /* Changed to white for better contrast */
+  left: 280px; /* Adjusted to ensure it does not overlap with the side panel */
+  width: calc(100% - 280px); /* Cover the remaining area excluding the side panel */
+  background-color: #323232;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.events {
+  margin-top: 60px; /* Add margin to avoid overlap with the fixed top bar */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center the events */
+  
+}
+
+.event {
+  width: 50%; /* Set the width of each event to 70% */
+  margin: 0 auto; /* Center the event horizontally */
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 50px 20px; /* Added padding to the event container */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #E9F1FA;
+}
+
+.event-image {
+  width: 70%; /* Adjusted width to occupy half of the given space */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block;
+  border: 2px solid #ddd; /* Optional: Add a border for a poster-like effect */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+}
+
+.event h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.event p {
+  font-size: 16px;
+  margin: 10px;
+  white-space: pre-wrap;
+}
