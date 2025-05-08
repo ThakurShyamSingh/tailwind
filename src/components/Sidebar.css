@@ -11,6 +11,21 @@
   overflow-y: auto;
 }
 
+.sidebar.phone-ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e293b;
+  color: white;
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .button-division {
   height: 100%;
   border-top-right-radius: 50px;
@@ -96,4 +111,43 @@
 
 .sidebar {
   overflow-y: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.menu-item.selected {
+  background-color: #3b82f6;
+  border-radius: 10px;
+}
+
+.menu-item .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item span {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.menu-item:hover {
+  background-color: #334155;
+  border-radius: 10px;
 }
