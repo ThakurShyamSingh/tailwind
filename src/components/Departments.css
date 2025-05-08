@@ -1,0 +1,16 @@
+/* Modernized Departments styles using Tailwind CSS */
+.departments-container {
+  @apply flex flex-col items-center bg-gray-100 min-h-screen p-4;
+}
+
+.department-list {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.department-item {
+  @apply bg-white rounded-lg shadow-md p-4;
+}
+
+.year-dropdown button {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition;
+}

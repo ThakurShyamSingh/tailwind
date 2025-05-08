@@ -24,7 +24,7 @@ const Sidebar = () => {
           onClick={() => navigate('/departments')}
         >
           <UserGroupIcon className="icon" />
-          Department
+          Departments
         </li>
         <li
           className={isSelected('/analysis') ? 'selected' : ''}
